@@ -1,6 +1,4 @@
-# Machine-Learning-Classification
-
-Como atividade acadêmica, desenvolvemos um projeto de Machine Learning supervisionado, utilizando como referência a estrutura de um case prático voltado à análise comercial. Ressaltamos que a base de dados utilizada no trabalho final é diferente da base originalmente proposta, pois alguns dados continham informações sensíveis e frágeis. Dessa forma, foi aproveitada principalmente a lógica do código, metodologia analítica e estrutura do projeto, com adaptações realizadas pelo grupo para fins de aprendizado.
+Como atividade acadêmica, um projeto de Machine Learning supervisionado foi desenvolvido, utilizando como referência a estrutura de um case prático voltado à análise comercial. A base de dados utilizada neste repositório é diferente da base originalmente proposta, pois alguns dados continham informações sensíveis e frágeis. Dessa forma, foi aproveitada principalmente a lógica do código, metodologia analítica e estrutura do projeto, com adaptações realizadas pelo grupo para fins de aprendizado.
 
 O conjunto de dados utilizado continha informações sobre oportunidades comerciais ganhas e perdidas, incluindo variáveis como status da oportunidade, datas de criação e encerramento, motivo de perda, perfil do cliente (ICP), vendedor responsável, pré-vendedor, valor da oportunidade, segmento de mercado e origem do lead.
 
