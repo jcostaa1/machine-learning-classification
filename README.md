@@ -1,48 +1,83 @@
-Como atividade acadêmica, um projeto de Machine Learning supervisionado foi desenvolvido, utilizando como referência a estrutura de um case prático voltado à análise comercial. A base de dados utilizada neste repositório é diferente da base originalmente proposta, pois alguns dados continham informações sensíveis e frágeis. Dessa forma, foi aproveitada principalmente a lógica do código, metodologia analítica e estrutura do projeto, com adaptações realizadas pelo grupo para fins de aprendizado.
+# 📊 Projeto de Machine Learning aplicado a Recrutamento e Seleção
 
-O conjunto de dados utilizado continha informações sobre oportunidades comerciais ganhas e perdidas, incluindo variáveis como status da oportunidade, datas de criação e encerramento, motivo de perda, perfil do cliente (ICP), vendedor responsável, pré-vendedor, valor da oportunidade, segmento de mercado e origem do lead.
+## 📌 Sobre o Projeto
 
-* Objetivo do Projeto
+Como atividade acadêmica, um projeto de **Machine Learning supervisionado** foi desenvolvido, utilizando como referência a estrutura de um case prático voltado à análise comercial. A base de dados utilizada neste repositório é diferente da base originalmente proposta, pois alguns dados continham informações sensíveis e frágeis. Dessa forma, foi aproveitada principalmente a lógica do código, metodologia analítica e estrutura do projeto, com adaptações realizadas pelo grupo para fins de aprendizado.
 
-O principal objetivo foi identificar os fatores que influenciam a perda de oportunidades comerciais, analisando também os padrões relacionados às oportunidades convertidas com sucesso. Para isso, buscamos responder perguntas como:
+Neste repositório, a base foi adaptada para um cenário de **Recrutamento e Seleção**, contendo informações simuladas de candidatos em processos seletivos.
 
-Quais os principais motivos de perda?
-O tempo da oportunidade influencia no fechamento?
-Quais canais geram melhores resultados?
-Existe diferença de performance entre vendedores?
-O ICP impacta na conversão?
-É possível prever se uma oportunidade será ganha ou perdida?
+O conjunto de dados inclui variáveis como:
 
-* Metodologia Aplicada
+- Idade  
+- Gênero  
+- Escolaridade  
+- Anos de experiência  
+- Nível de inglês  
+- Pretensão salarial  
+- Área de atuação  
+- Tempo de processo seletivo  
+- Número de entrevistas realizadas  
+- Origem da candidatura  
+- Status final do processo  
 
-O projeto foi conduzido com base na metodologia CRISP-DM, passando pelas etapas de:
+---
 
-Compreensão do negócio
-Entendimento dos dados
-Preparação da base
-Análise exploratória (EDA)
-Modelagem preditiva
-Avaliação dos resultados
-Técnicas Utilizadas
+## 🎯 Objetivo do Projeto
 
-Durante o desenvolvimento foram aplicadas técnicas como:
+Identificar os fatores que influenciam a **aprovação ou reprovação de candidatos** em processos seletivos, além de analisar padrões relacionados às contratações bem-sucedidas.
 
-Tratamento e limpeza de dados com Python / Pandas
-Visualização de dados com Matplotlib e Seaborn
-Clusterização com K-Means
-Classificação com Decision Tree
-Avaliação por Matriz de Confusão, ROC Curve e AUC
-Interpretação de variáveis com Feature Importance e SHAP Values
-Principais Insights
+### Perguntas de negócio analisadas:
 
-* Os resultados indicaram que:
+- Quais características aumentam a chance de contratação?  
+- Experiência profissional impacta mais que escolaridade?  
+- Pretensão salarial influencia no resultado?  
+- O tempo do processo seletivo interfere na aprovação?  
+- Existem diferenças entre áreas de atuação?  
+- Qual canal de candidatura gera melhores resultados?  
+- É possível prever se um candidato será aprovado ou reprovado?  
 
-O tempo em aberto da oportunidade foi uma das variáveis mais relevantes para prever perdas;
-O valor financeiro teve baixa influência isolada;
-Alguns canais de origem apresentaram melhor conversão que outros;
-Grande parte das perdas estava relacionada à falta de contato, desinteresse ou demora no processo comercial;
-O modelo preditivo apresentou bom desempenho para apoiar a priorização comercial.
+---
 
-* Conclusão
+## 🧩 Metodologia Aplicada
 
-O projeto proporcionou uma experiência prática completa em Ciência de Dados aplicada ao contexto de negócios, envolvendo desde exploração e tratamento dos dados até construção e interpretação de modelos de Machine Learning.
+O projeto foi conduzido com base na metodologia **CRISP-DM**, seguindo as etapas:
+
+1. Compreensão do negócio  
+2. Entendimento dos dados  
+3. Preparação da base  
+4. Análise exploratória (EDA)  
+5. Modelagem preditiva  
+6. Avaliação dos resultados  
+
+---
+
+## ⚙️ Técnicas Utilizadas
+
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Scikit-Learn  
+- K-Means  
+- Decision Tree  
+- ROC Curve  
+- AUC  
+- SHAP Values  
+
+---
+
+## 📈 Principais Insights
+
+- Tempo de experiência foi uma das variáveis mais relevantes para aprovação;  
+- Pretensão salarial impactou decisões em determinadas vagas;  
+- Candidatos com maior aderência técnica apresentaram melhor desempenho;  
+- Alguns canais de candidatura tiveram maior taxa de conversão;  
+- Processos seletivos longos apresentaram maior índice de desistência;  
+- O modelo preditivo demonstrou bom potencial para apoiar triagem inicial.
+
+---
+
+## 🚀 Resultados Esperados
+
+Este projeto demonstra como técnicas de **Data Science** podem apoiar decisões estratégicas em **Recursos Humanos**, tornando processos seletivos mais eficientes, assertivos e orientados por dados.
