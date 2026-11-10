@@ -1,7 +1,7 @@
 # 📊 Machine Learning aplicado a Recrutamento e Seleção
 
 ## 📌 Sobre o Projeto
-Como atividade acadêmica, um projeto de **Machine Learning supervisionado** foi desenvolvido, utilizando como referência a estrutura de um case prático voltado à análise comercial. A base de dados utilizada neste repositório é diferente da base originalmente proposta, pois alguns dados continham informações sensíveis e frágeis. Dessa forma, foi aproveitada principalmente a lógica do código, metodologia analítica e estrutura do projeto, com adaptações realizadas pelo grupo para fins de aprendizado.
+Como atividade acadêmica, um projeto de **Machine Learning Supervisionado** foi desenvolvido, utilizando como referência a estrutura de um case prático voltado à análise comercial. A base de dados utilizada neste repositório é diferente da base originalmente proposta, pois alguns dados continham informações sensíveis e frágeis. Dessa forma, foi aproveitada principalmente a lógica do código, metodologia analítica e estrutura do projeto, com adaptações realizadas pelo grupo para fins de aprendizado.
 
 Neste repositório, a base foi adaptada para um cenário de **Recrutamento e Seleção**, composta por **500 candidatos fictícios**, gerados com Python (Faker, NumPy), sem qualquer informação real.
 
