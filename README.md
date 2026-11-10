@@ -58,6 +58,4 @@ Python · Pandas · NumPy · Matplotlib · Seaborn · SciPy (KS test) · Scikit-
 - Expected salary varies with seniority, but this reflects the way the dataset was simulated.
 - Longer processes appear associated with rejections and withdrawals, but since `Tempo_Processo_Dias` is a consequence of the outcome, this relationship should not be read as causal.
 - **Model performance:** since the dataset is fictional and mostly random, the model performs close to chance (AUC ≈ 0.5). This is expected and reinforces the importance of validating hypotheses and checking for leakage before trusting high metrics.
-- Results by channel, area, and recruiter vary slightly from one another, but without strong differences, which is consistent with randomly generated data. (Update this section with the numbers from your own run.)
-
-> ⚠️ **Warning:** the data is simulated and the results are for educational purposes only. They do not represent real selection processes and must not be used for decision-making.
+- Results by channel, area, and recruiter vary slightly from one another, but without strong differences, which is consistent with randomly generated data. 
