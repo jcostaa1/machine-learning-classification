@@ -60,9 +60,3 @@ Python · Pandas · NumPy · Matplotlib · Seaborn · SciPy (teste KS) · Scikit
 - Resultados por canal, área e recrutador variam levemente entre si, mas **sem diferenças fortes**, o que é coerente com dados gerados aleatoriamente. (Atualize esta seção com os números da sua execução.)
 
 > ⚠️ **Aviso:** os dados são simulados e os resultados têm finalidade exclusivamente didática. Não representam processos seletivos reais e não devem ser usados para tomada de decisão.
-
-## 🚀 Próximos Passos
-- Aplicar a mesma estrutura a uma base real e anonimizada, incluindo variáveis como experiência, escolaridade e nível de inglês;
-- Testar outros modelos (Random Forest, Gradient Boosting) e validação cruzada;
-- Avaliar viés e justiça do modelo antes de qualquer uso em triagem de candidatos;
-- Criar um dashboard (Power BI) com os indicadores do funil de recrutamento.
