@@ -1,62 +1,63 @@
-# 📊 Machine Learning aplicado a Recrutamento e Seleção
+# 📊 Machine Learning Applied to Recruitment and Selection
 
-## 📌 Sobre o Projeto
-Como atividade acadêmica, um projeto de **Machine Learning Supervisionado** foi desenvolvido, utilizando como referência a estrutura de um case prático voltado à análise comercial. A base de dados utilizada neste repositório é diferente da base originalmente proposta, pois alguns dados continham informações sensíveis e frágeis. Dessa forma, foi aproveitada principalmente a lógica do código, metodologia analítica e estrutura do projeto, com adaptações realizadas pelo grupo para fins de aprendizado.
+## 📌 About the Project
+As an academic assignment, a Supervised Machine Learning project was developed, using the structure of a practical case focused on sales analysis as a reference. The dataset used in this repository is different from the one originally proposed, because some of the data contained sensitive and fragile information. Because of this, the project mainly reuses the code logic, analytical methodology, and project structure, with adaptations made by the group for learning purposes.
 
-Neste repositório, a base foi adaptada para um cenário de **Recrutamento e Seleção**, composta por **500 candidatos fictícios**, gerados com Python (Faker, NumPy), sem qualquer informação real.
+In this repository, the dataset was adapted to a Recruitment and Selection scenario, made up of 500 fictional candidates generated with Python (Faker, NumPy), with no real information whatsoever.
 
-## 🗂️ Base de Dados
-Arquivo: `database_recruiter.csv` (dados simulados, sem informações reais).
+## 🗂️ Dataset
+File: `database_recruiter.csv` (simulated data, no real information).
 
-| Variável | Descrição |
+| Variable | Description |
 |---|---|
-| `ID_Candidato` | Identificador do candidato |
-| `Status` | Resultado final: Aprovado / Reprovado (**variável alvo**) |
-| `Data_Inscricao` | Data da inscrição na vaga |
-| `Data_Finalizacao` | Data de encerramento do processo |
-| `Motivo_Reprovacao` | Motivo da reprovação (vazio para aprovados) |
-| `Tempo_Processo_Dias` | Duração do processo seletivo em dias |
-| `Pretensao_Salarial` | Pretensão salarial informada (R$) |
-| `Recrutador` | Recrutador responsável |
-| `Origem_Candidato` | Canal de candidatura (LinkedIn, Gupy, Indicação, Catho, Indeed, Site Empresa) |
-| `Senioridade` | Júnior, Pleno ou Sênior |
-| `Area` | Dados, TI, Financeiro, RH, Marketing ou Operações |
-| `Teste_Tecnico` | Resultado do teste técnico |
+| `ID_Candidato` | Candidate identifier |
+| `Status` | Final result: Approved / Rejected (target variable) |
+| `Data_Inscricao` | Date the candidate applied for the position |
+| `Data_Finalizacao` | Date the process ended |
+| `Motivo_Reprovacao` | Rejection reason (empty for approved candidates) |
+| `Tempo_Processo_Dias` | Duration of the selection process in days |
+| `Pretensao_Salarial` | Expected salary informed by the candidate (R$) |
+| `Recrutador` | Recruiter in charge |
+| `Origem_Candidato` | Application channel (LinkedIn, Gupy, Referral, Catho, Indeed, Company Website) |
+| `Senioridade` | Junior, Mid-level, or Senior |
+| `Area` | Data, IT, Finance, HR, Marketing, or Operations |
+| `Teste_Tecnico` | Technical test result |
 
-## 🎯 Objetivo
-Identificar fatores associados à aprovação ou reprovação de candidatos e avaliar se é possível prever o resultado do processo seletivo.
+## 🎯 Objective
+Identify factors associated with the approval or rejection of candidates and assess whether it is possible to predict the outcome of the selection process.
 
-**Perguntas de negócio analisadas**
-- Qual canal de candidatura gera mais aprovações?
-- Existem diferenças de aprovação entre áreas e senioridades?
-- A pretensão salarial influencia o resultado?
-- O tempo do processo seletivo está associado à aprovação?
-- Quais são os principais motivos de reprovação?
-- Há diferença de desempenho entre recrutadores?
-- É possível prever se um candidato será aprovado ou reprovado?
+**Business questions analyzed**
 
-## 🧩 Metodologia (CRISP-DM)
-1. Compreensão do negócio
-2. Entendimento dos dados (dicionário, qualidade, nulos e duplicados)
-3. Preparação da base (tipagem de datas, definição do target, tratamento de nulos)
-4. Análise exploratória (EDA)
-5. Modelagem (K-Means e Árvore de Decisão)
-6. Avaliação dos resultados
+- Which application channel generates the most approvals?
+- Are there differences in approval between areas and seniority levels?
+- Does the expected salary influence the result?
+- Is the duration of the selection process associated with approval?
+- What are the main reasons for rejection?
+- Is there a performance difference between recruiters?
+- Is it possible to predict whether a candidate will be approved or rejected?
 
-## ⚙️ Técnicas e Ferramentas
-Python · Pandas · NumPy · Matplotlib · Seaborn · SciPy (teste KS) · Scikit-Learn · K-Means (Elbow e Silhouette) · Decision Tree · Split temporal treino/teste · ROC/AUC · Matriz de Confusão · SHAP Values · Faker
+## 🧩 Methodology (CRISP-DM)
+1. Business understanding
+2. Data understanding (dictionary, quality, nulls, and duplicates)
+3. Data preparation (date typing, target definition, null handling)
+4. Exploratory data analysis (EDA)
+5. Modeling (K-Means and Decision Tree)
+6. Evaluation of results
 
-## 🔎 O que foi feito
-- **EDA:** aprovados x reprovados por origem, área, senioridade, recrutador e mês de inscrição; taxa de aprovação por categoria; principais motivos de reprovação; pretensão salarial por senioridade; tempo de processo por status.
-- **KS (Kolmogorov-Smirnov):** importância univariada das variáveis numéricas.
-- **K-Means:** segmentação por pretensão salarial e tempo de processo, com escolha do K via Silhouette.
-- **Árvore de Decisão:** previsão de aprovação com divisão temporal (70% mais antigos para treino, 30% mais recentes para teste) e interpretação via SHAP.
+## ⚙️ Techniques and Tools
+Python · Pandas · NumPy · Matplotlib · Seaborn · SciPy (KS test) · Scikit-Learn · K-Means (Elbow and Silhouette) · Decision Tree · Temporal train/test split · ROC/AUC · Confusion Matrix · SHAP Values · Faker
 
-## 📈 Principais Resultados e Aprendizados
-- **Vazamento de informação (data leakage):** `Motivo_Reprovacao`, `Tempo_Processo_Dias`, `Data_Finalizacao` e `Teste_Tecnico` só são conhecidos após o desfecho (ou são determinados por ele). Por isso ficaram **fora do modelo**, que usa apenas variáveis disponíveis na triagem: pretensão salarial, senioridade, área, recrutador e origem.
-- **Pretensão salarial** varia conforme a senioridade, mas isso reflete a forma como a base foi simulada.
-- **Processos mais longos** aparecem associados a reprovações e desistências, porém como `Tempo_Processo_Dias` é consequência do desfecho, essa relação não deve ser lida como causal.
-- **Desempenho do modelo:** como a base é fictícia e majoritariamente aleatória, o modelo apresenta desempenho próximo ao acaso (AUC ≈ 0,5). Isso é esperado e reforça a importância de validar hipóteses e checar vazamento antes de confiar em métricas altas.
-- Resultados por canal, área e recrutador variam levemente entre si, mas **sem diferenças fortes**, o que é coerente com dados gerados aleatoriamente. (Atualize esta seção com os números da sua execução.)
+## 🔎 What was done
+- **EDA:** approved vs. rejected by origin, area, seniority, recruiter, and application month; approval rate by category; main rejection reasons; expected salary by seniority; process duration by status.
+- **KS (Kolmogorov-Smirnov):** univariate importance of the numeric variables.
+- **K-Means:** segmentation by expected salary and process duration, with K chosen via Silhouette.
+- **Decision Tree:** approval prediction with a temporal split (oldest 70% for training, most recent 30% for testing) and interpretation via SHAP.
 
-> ⚠️ **Aviso:** os dados são simulados e os resultados têm finalidade exclusivamente didática. Não representam processos seletivos reais e não devem ser usados para tomada de decisão.
+## 📈 Main Results and Learnings
+- **Data leakage:** `Motivo_Reprovacao`, `Tempo_Processo_Dias`, `Data_Finalizacao`, and `Teste_Tecnico` are only known after the outcome (or are determined by it). For this reason they were left out of the model, which uses only variables available at the screening stage: expected salary, seniority, area, recruiter, and origin.
+- Expected salary varies with seniority, but this reflects the way the dataset was simulated.
+- Longer processes appear associated with rejections and withdrawals, but since `Tempo_Processo_Dias` is a consequence of the outcome, this relationship should not be read as causal.
+- **Model performance:** since the dataset is fictional and mostly random, the model performs close to chance (AUC ≈ 0.5). This is expected and reinforces the importance of validating hypotheses and checking for leakage before trusting high metrics.
+- Results by channel, area, and recruiter vary slightly from one another, but without strong differences, which is consistent with randomly generated data. (Update this section with the numbers from your own run.)
+
+> ⚠️ **Warning:** the data is simulated and the results are for educational purposes only. They do not represent real selection processes and must not be used for decision-making.
